@@ -1,11 +1,28 @@
 import React, {useEffect } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { Box, Grid, Button } from '@material-ui/core';
+import { Box, Grid, Button, Paper } from '@material-ui/core';
+import { Skeleton } from '@material-ui/lab';
 import { Link } from 'react-router-dom';
+import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 
 const axios = require('axios');
 
+const theme = createMuiTheme({
+  body: {
+    fontFamily: 'Do Hyeon',
+  },
+});
+
 const useStyles = makeStyles((theme) => ({
+  bgcolor: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    width: '100%',
+    height: '100%',
+    backgroundColor: '#5599ff',
+    zIndex: -1000,
+  },
   boxMain: {
     // backgroundColor: 'green',
     width: '1080px',
@@ -15,23 +32,46 @@ const useStyles = makeStyles((theme) => ({
     marginTop: '50px',
   },
   title: {
-    backgroundColor: 'green',
-    // width: 1080 / 2 = 540px
-    height: '200px',
+    // backgroundColor: 'green',
+    // height: '200px',
+  },
+  paperTitle: {
+    padding: theme.spacing(5),
+    textAlign: 'center',
+    fontSize: '10em',
+    // color: theme.palette.text.secondary,
   },
   infoContainer: {
     marginTop: '50px',
   },
   info: {
-    backgroundColor: 'green',
-    height: '50px',
+    // backgroundColor: 'green',
+    padding: theme.spacing(0),
+  },
+  paperInfo: {
+    padding: theme.spacing(2),
+    textAlign: 'center',
+    // color: theme.palette.text.secondary,
+  },
+  aniInfo: {
+    paddingTop: theme.spacing(2),
+    paddingBottom: theme.spacing(2),
+    textAlign: 'center',
   },
   adContainer: {
     marginTop: '50px',
   },
   ad: {
+    backgroundColor: 'green',
+    // height: '300px',
+  },
+  paperAd: {
+    padding: theme.spacing(10),
+    textAlign: 'center',
+    backgroundColor: 'yellow',
+  },
+  btnTest: {
     backgroundColor: 'red',
-    height: '300px',
   },
 }));
 
@@ -59,39 +99,49 @@ const Main = () => {
 
   return (
     <div>
+      <div className={classes.bgcolor}> </div>
       <Box className={classes.boxMain}>
         <Grid container className={classes.titleContainer}>
           <Grid item xs={3} />
+          <MuiThemeProvider theme={theme}>
           <Grid item xs={6} className={classes.title}>
-            title image
+            <Paper className={classes.paperTitle}> OC.GG </Paper>
           </Grid>
+          </MuiThemeProvider>
           <Grid item xs={3} />
         </Grid>
         <Grid container className={classes.infoContainer}>
           <Grid item xs={3} />
             <Grid item xs={6} className={classes.info}>
-              info message
+              <Skeleton variant='rect' width={540} className={classes.aniInfo}>
+                {/* <Paper className={classes.paperInfo}> ... 게임 시작을 기다리는 중 ... </Paper> */}
+                ... 게임 시작을 기다리는 중 ...
+              </Skeleton>
             </Grid>
           <Grid item xs={3} />
         </Grid>
         <Grid container className={classes.adContainer}>
           <Grid item xs={3} />
             <Grid item xs={6} className={classes.ad}>
-              Advertisement #1
+              <Paper className={classes.paperAd}>
+                Advertisement #1
+              </Paper>
             </Grid>
           <Grid item xs={3} />
         </Grid>
         <Grid container className={classes.adContainer}>
           <Grid item xs={3} />
             <Grid item xs={6} className={classes.ad}>
-              Advertisement #2
+            <Paper className={classes.paperAd}>
+                Advertisement #2
+              </Paper>
             </Grid>
           <Grid item xs={3} />
         </Grid>
 
-        <Button variant="contained">
+        <Button variant="contained" className={classes.btnTest}>
           <Link to="/Play">
-            Next Page
+            Next Page (Test용)
           </Link>
         </Button>
       </Box>

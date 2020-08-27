@@ -4,11 +4,20 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter as Router } from 'react-router-dom';
+import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+
+const theme = createMuiTheme({
+  test: {
+    fontFamily: 'Do Hyeon',
+  },
+});
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-      <App />
+      <MuiThemeProvider theme={theme}>
+        <App />
+      </MuiThemeProvider>
     </Router>
   </React.StrictMode>,
   document.getElementById('root')
