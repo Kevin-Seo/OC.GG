@@ -1,17 +1,10 @@
-import React, {useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Box, Grid, Button, Paper } from '@material-ui/core';
 import { Skeleton } from '@material-ui/lab';
 import { Link } from 'react-router-dom';
-import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 
 const axios = require('axios');
-
-const theme = createMuiTheme({
-  body: {
-    fontFamily: 'Do Hyeon',
-  },
-});
 
 const useStyles = makeStyles((theme) => ({
   bgcolor: {
@@ -90,7 +83,7 @@ const callAPIstart = () => {
 }
 
 const Main = () => {
-  const classes = useStyles();
+    const classes = useStyles();
 
   useEffect(() => {
     console.log('마운트 될 때만 실행됩니다.');
@@ -103,39 +96,36 @@ const Main = () => {
       <Box className={classes.boxMain}>
         <Grid container className={classes.titleContainer}>
           <Grid item xs={3} />
-          <MuiThemeProvider theme={theme}>
           <Grid item xs={6} className={classes.title}>
             <Paper className={classes.paperTitle}> OC.GG </Paper>
           </Grid>
-          </MuiThemeProvider>
           <Grid item xs={3} />
         </Grid>
         <Grid container className={classes.infoContainer}>
           <Grid item xs={3} />
-            <Grid item xs={6} className={classes.info}>
-              <Skeleton variant='rect' width={540} className={classes.aniInfo}>
-                {/* <Paper className={classes.paperInfo}> ... 게임 시작을 기다리는 중 ... </Paper> */}
-                ... 게임 시작을 기다리는 중 ...
-              </Skeleton>
-            </Grid>
+          <Grid item xs={6} className={classes.info}>
+            <Skeleton variant='rect' width={540} className={classes.aniInfo}>
+              ... 게임 시작을 기다리는 중 ...
+            </Skeleton>
+          </Grid>
           <Grid item xs={3} />
         </Grid>
         <Grid container className={classes.adContainer}>
           <Grid item xs={3} />
-            <Grid item xs={6} className={classes.ad}>
-              <Paper className={classes.paperAd}>
-                Advertisement #1
-              </Paper>
-            </Grid>
-          <Grid item xs={3} />
-        </Grid>
-        <Grid container className={classes.adContainer}>
-          <Grid item xs={3} />
-            <Grid item xs={6} className={classes.ad}>
+          <Grid item xs={6} className={classes.ad}>
             <Paper className={classes.paperAd}>
-                Advertisement #2
-              </Paper>
-            </Grid>
+              Advertisement #1
+            </Paper>
+          </Grid>
+          <Grid item xs={3} />
+        </Grid>
+        <Grid container className={classes.adContainer}>
+          <Grid item xs={3} />
+          <Grid item xs={6} className={classes.ad}>
+          <Paper className={classes.paperAd}>
+              Advertisement #2
+            </Paper>
+          </Grid>
           <Grid item xs={3} />
         </Grid>
 
