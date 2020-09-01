@@ -35,10 +35,46 @@ const useStyles = makeStyles((theme) => ({
   mainContainer: {
     marginTop: 20,
   },
-  myChampItem: {
-    padding: theme.spacing(1),
+  myChampItemImage: {
+    padding: theme.spacing(2),
     textAlign: 'center',
-    border: 'dashed',
+    border: 'solid',
+    borderWidth: '2px 2px 2px 2px',
+    height: 150,
+  },
+  myChampItem: {
+    textAlign: 'center',
+    border: 'solid',
+    borderWidth: '2px 2px 2px 0px',
+    height: 150,
+  },
+  myChampBoxTop: {
+    padding: theme.spacing(2),
+    textAlign: 'center',
+    border: 'solid',
+    borderWidth: '0px 0px 2px 0px',
+  },
+  myChampBoxBottom: {
+    padding: theme.spacing(2),
+    paddingTop: theme.spacing(4.5),
+    textAlign: 'center',
+  },
+  myChampMoreContainer: {
+    marginTop: 20,
+  },
+  myChampMoreLeft: {
+    padding: theme.spacing(2),
+    textAlign: 'center',
+    border: 'solid',
+    borderWidth: '2px 2px 2px 2px',
+    // height: 150,
+  },
+  myChampMoreOthers: {
+    padding: theme.spacing(2),
+    textAlign: 'center',
+    border: 'solid',
+    borderWidth: '2px 2px 2px 0px',
+    // height: 150,
   },
 }));
 
@@ -71,37 +107,121 @@ const Play = () => {
           <Grid item xs={10}>
             <Grid container className={classes.myChampContainer}>
               <Grid item xs={1} />
-              <Grid item xs={2} className={classes.myChampItem}>
+              <Grid item xs={2} className={classes.myChampItemImage}>
                 image
               </Grid>
               <Grid item xs={1} className={classes.myChampItem}>
-                11
+                <Box className={classes.myChampBoxTop}>
+                  레벨
+                </Box>
+                <Box className={classes.myChampBoxBottom}>
+                  test2
+                </Box>
               </Grid>
               <Grid item xs={1} className={classes.myChampItem}>
-                22
+                <Box className={classes.myChampBoxTop}>
+                  공격력
+                </Box>
+                <Box className={classes.myChampBoxBottom}>
+                  test2
+                </Box>
               </Grid>
               <Grid item xs={1} className={classes.myChampItem}>
-                33
+                <Box className={classes.myChampBoxTop}>
+                  룬
+                 </Box>
+                <Box className={classes.myChampBoxBottom}>
+                  test2
+                </Box>
               </Grid>
               <Grid item xs={1} className={classes.myChampItem}>
-                44
+                <Box className={classes.myChampBoxTop}>
+                  패시브
+                </Box>
+                <Box className={classes.myChampBoxBottom}>
+                  test2
+                </Box>
               </Grid>
               <Grid item xs={1} className={classes.myChampItem}>
-                55
+                <Box className={classes.myChampBoxTop}>
+                  Q
+                </Box>
+                <Box className={classes.myChampBoxBottom}>
+                  test2
+                </Box>
               </Grid>
               <Grid item xs={1} className={classes.myChampItem}>
-                66
+                <Box className={classes.myChampBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.myChampBoxBottom}>
+                  test2
+                </Box>
               </Grid>
               <Grid item xs={1} className={classes.myChampItem}>
-                77
+                <Box className={classes.myChampBoxTop}>
+                  E
+                </Box>
+                <Box className={classes.myChampBoxBottom}>
+                  test2
+                </Box>
               </Grid>
               <Grid item xs={1} className={classes.myChampItem}>
-                88
+                <Box className={classes.myChampBoxTop}>
+                  R
+                </Box>
+                <Box className={classes.myChampBoxBottom}>
+                  test2
+                </Box>
               </Grid>
               <Grid item xs={1} />
             </Grid>
           </Grid>
           <Grid item xs={1} />
+
+          <Grid container className={classes.myChampMoreContainer}>
+            <Grid item xs={1} />
+            <Grid item xs={4} className={classes.myChampMoreItem}>
+              <Grid container>
+                <Grid item xs={2} />
+                <Grid item xs={2} className={classes.myChampMoreLeft}>
+                  E1
+                </Grid>
+                <Grid item xs={2} className={classes.myChampMoreOthers}>
+                  E2
+                </Grid>
+                <Grid item xs={2} className={classes.myChampMoreOthers}>
+                  E3
+                </Grid>
+                <Grid item xs={2} className={classes.myChampMoreOthers}>
+                  E4
+                </Grid>
+                <Grid item xs={2} className={classes.myChampMoreOthers}>
+                  E5
+                </Grid>
+              </Grid>
+            </Grid>
+            <Grid item xs={2} />
+            <Grid item xs={4}>
+              <Grid container>
+                <Grid item xs={2} />
+                <Grid item xs={2} className={classes.myChampMoreLeft}>
+                  E2
+                </Grid>
+                <Grid item xs={2} className={classes.myChampMoreOthers}>
+                  E3
+                </Grid>
+                <Grid item xs={2} className={classes.myChampMoreOthers}>
+                  E4
+                </Grid>
+                <Grid item xs={2} className={classes.myChampMoreOthers}>
+                  E5
+                </Grid>
+                <Grid item xs={2} />
+              </Grid>
+            </Grid>
+            <Grid item xs={1} />
+          </Grid>
         </Grid>
       </Box>
     </div>
