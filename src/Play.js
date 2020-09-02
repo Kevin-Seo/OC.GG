@@ -32,8 +32,10 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 20,
     color: 'white',
   },
-  mainContainer: {
-    marginTop: 20,
+  myChampContainer: {
+    backgroundColor: 'green',
+    paddingTop: 20,
+    paddingBottom: 20,
   },
   myChampItemImage: {
     padding: theme.spacing(2),
@@ -76,6 +78,60 @@ const useStyles = makeStyles((theme) => ({
     borderWidth: '2px 2px 2px 0px',
     // height: 150,
   },
+  enemy1Container: {
+    backgroundColor: 'green',
+    marginTop: 20,
+    paddingTop: 20,
+    paddingBottom: 20,
+  },
+  enemy1ImageItem: {
+    backgroundColor: 'blue',
+    height: 90,
+  },
+  enemy1BasicItem: {
+    backgroundColor: 'red',
+  },
+  enemy1BasicBox: {
+    float: 'left',
+  },
+  enemy1BasicBoxTop: {
+    backgroundColor: 'gray',
+    marginLeft: 20,
+    width: 70,
+    height: 70,
+    textAlign: 'center',
+  },
+  enemy1BasicBoxBottom: {
+    backgroundColor: 'white',
+    marginLeft: 20,
+    width: 70,
+    height: 20,
+    textAlign: 'center',
+  },
+  enemy1ComboContainer: {
+    backgroundColor: 'red',
+    marginTop: 20,
+  },
+  enemy1ComboBox: {
+    float: 'left',
+  },
+  enemy1ComboBoxTop: {
+    backgroundColor: 'gray',
+    marginLeft: 20,
+    width: 70,
+    height: 70,
+    textAlign: 'center',
+  },
+  enemy1ComboBoxBottom: {
+    backgroundColor: 'white',
+    marginLeft: 20,
+    width: 70,
+    height: 20,
+    textAlign: 'center',
+  },
+  enemy1Total: {
+    backgroundColor: 'yellow',
+  }
 }));
 
 const Play = () => {
@@ -102,10 +158,10 @@ const Play = () => {
           </Grid>
         </Grid>
 
-        <Grid container className={classes.mainContainer}>
+        <Grid container className={classes.myChampContainer}>
           <Grid item xs={1} />
           <Grid item xs={10}>
-            <Grid container className={classes.myChampContainer}>
+            <Grid container>
               <Grid item xs={1} />
               <Grid item xs={2} className={classes.myChampItemImage}>
                 image
@@ -221,6 +277,1259 @@ const Play = () => {
               </Grid>
             </Grid>
             <Grid item xs={1} />
+          </Grid>
+        </Grid>
+      
+        <Grid container className={classes.enemy1Container}>
+          <Grid container>
+            <Grid item xs={1} className={classes.enemy1ImageItem}>
+              aa
+            </Grid>
+            <Grid item xs={11} className={classes.enemy1BasicItem}>
+              <Box className={classes.enemy1BasicBox}>
+                <Box className={classes.enemy1BasicBoxTop}>
+                  A
+                </Box>
+                <Box className={classes.enemy1BasicBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1BasicBox}>
+                <Box className={classes.enemy1BasicBoxTop}>
+                  P
+                </Box>
+                <Box className={classes.enemy1BasicBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1BasicBox}>
+                <Box className={classes.enemy1BasicBoxTop}>
+                  Q
+                </Box>
+                <Box className={classes.enemy1BasicBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1BasicBox}>
+                <Box className={classes.enemy1BasicBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1BasicBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1BasicBox}>
+                <Box className={classes.enemy1BasicBoxTop}>
+                  E
+                </Box>
+                <Box className={classes.enemy1BasicBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1BasicBox}>
+                <Box className={classes.enemy1BasicBoxTop}>
+                  R
+                </Box>
+                <Box className={classes.enemy1BasicBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1BasicBox}>
+                <Box className={classes.enemy1BasicBoxTop}>
+                  Rune
+                </Box>
+                <Box className={classes.enemy1BasicBoxBottom}>
+                  123
+                </Box>
+              </Box>
+            </Grid>
+          </Grid>
+
+          <Grid container className={classes.enemy1ComboContainer}>
+            <Grid item xs={10}>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+            </Grid>
+            <Grid item xs={2} className={classes.enemy1Total}>
+              <Box className={classes.enemy1BasicBox}>
+                <Box className={classes.enemy1BasicBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1BasicBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1BasicBox}>
+                <Box className={classes.enemy1BasicBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1BasicBoxBottom}>
+                  123
+                </Box>
+              </Box>
+            </Grid>
+          </Grid>
+          <Grid container className={classes.enemy1ComboContainer}>
+            <Grid item xs={10}>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+            </Grid>
+            <Grid item xs={2} className={classes.enemy1Total}>
+              <Box className={classes.enemy1BasicBox}>
+                <Box className={classes.enemy1BasicBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1BasicBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1BasicBox}>
+                <Box className={classes.enemy1BasicBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1BasicBoxBottom}>
+                  123
+                </Box>
+              </Box>
+            </Grid>
+          </Grid>
+          <Grid container className={classes.enemy1ComboContainer}>
+            <Grid item xs={10}>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+            </Grid>
+            <Grid item xs={2} className={classes.enemy1Total}>
+              <Box className={classes.enemy1BasicBox}>
+                <Box className={classes.enemy1BasicBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1BasicBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1BasicBox}>
+                <Box className={classes.enemy1BasicBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1BasicBoxBottom}>
+                  123
+                </Box>
+              </Box>
+            </Grid>
+          </Grid>
+          <Grid container className={classes.enemy1ComboContainer}>
+            <Grid item xs={10}>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+            </Grid>
+            <Grid item xs={2} className={classes.enemy1Total}>
+              <Box className={classes.enemy1BasicBox}>
+                <Box className={classes.enemy1BasicBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1BasicBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1BasicBox}>
+                <Box className={classes.enemy1BasicBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1BasicBoxBottom}>
+                  123
+                </Box>
+              </Box>
+            </Grid>
+          </Grid>
+          <Grid container className={classes.enemy1ComboContainer}>
+            <Grid item xs={10}>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+            </Grid>
+            <Grid item xs={2} className={classes.enemy1Total}>
+              <Box className={classes.enemy1BasicBox}>
+                <Box className={classes.enemy1BasicBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1BasicBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1BasicBox}>
+                <Box className={classes.enemy1BasicBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1BasicBoxBottom}>
+                  123
+                </Box>
+              </Box>
+            </Grid>
+          </Grid>
+        </Grid>
+        
+        <Grid container className={classes.enemy1Container}>
+          <Grid container>
+            <Grid item xs={1} className={classes.enemy1ImageItem}>
+              aa
+            </Grid>
+            <Grid item xs={11} className={classes.enemy1BasicItem}>
+              <Box className={classes.enemy1BasicBox}>
+                <Box className={classes.enemy1BasicBoxTop}>
+                  A
+                </Box>
+                <Box className={classes.enemy1BasicBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1BasicBox}>
+                <Box className={classes.enemy1BasicBoxTop}>
+                  P
+                </Box>
+                <Box className={classes.enemy1BasicBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1BasicBox}>
+                <Box className={classes.enemy1BasicBoxTop}>
+                  Q
+                </Box>
+                <Box className={classes.enemy1BasicBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1BasicBox}>
+                <Box className={classes.enemy1BasicBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1BasicBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1BasicBox}>
+                <Box className={classes.enemy1BasicBoxTop}>
+                  E
+                </Box>
+                <Box className={classes.enemy1BasicBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1BasicBox}>
+                <Box className={classes.enemy1BasicBoxTop}>
+                  R
+                </Box>
+                <Box className={classes.enemy1BasicBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1BasicBox}>
+                <Box className={classes.enemy1BasicBoxTop}>
+                  Rune
+                </Box>
+                <Box className={classes.enemy1BasicBoxBottom}>
+                  123
+                </Box>
+              </Box>
+            </Grid>
+          </Grid>
+
+          <Grid container className={classes.enemy1ComboContainer}>
+            <Grid item xs={10}>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+            </Grid>
+            <Grid item xs={2} className={classes.enemy1Total}>
+              <Box className={classes.enemy1BasicBox}>
+                <Box className={classes.enemy1BasicBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1BasicBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1BasicBox}>
+                <Box className={classes.enemy1BasicBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1BasicBoxBottom}>
+                  123
+                </Box>
+              </Box>
+            </Grid>
+          </Grid>
+        </Grid>
+
+        <Grid container className={classes.enemy1Container}>
+          <Grid container>
+            <Grid item xs={1} className={classes.enemy1ImageItem}>
+              aa
+            </Grid>
+            <Grid item xs={11} className={classes.enemy1BasicItem}>
+              <Box className={classes.enemy1BasicBox}>
+                <Box className={classes.enemy1BasicBoxTop}>
+                  A
+                </Box>
+                <Box className={classes.enemy1BasicBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1BasicBox}>
+                <Box className={classes.enemy1BasicBoxTop}>
+                  P
+                </Box>
+                <Box className={classes.enemy1BasicBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1BasicBox}>
+                <Box className={classes.enemy1BasicBoxTop}>
+                  Q
+                </Box>
+                <Box className={classes.enemy1BasicBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1BasicBox}>
+                <Box className={classes.enemy1BasicBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1BasicBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1BasicBox}>
+                <Box className={classes.enemy1BasicBoxTop}>
+                  E
+                </Box>
+                <Box className={classes.enemy1BasicBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1BasicBox}>
+                <Box className={classes.enemy1BasicBoxTop}>
+                  R
+                </Box>
+                <Box className={classes.enemy1BasicBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1BasicBox}>
+                <Box className={classes.enemy1BasicBoxTop}>
+                  Rune
+                </Box>
+                <Box className={classes.enemy1BasicBoxBottom}>
+                  123
+                </Box>
+              </Box>
+            </Grid>
+          </Grid>
+
+          <Grid container className={classes.enemy1ComboContainer}>
+            <Grid item xs={10}>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+            </Grid>
+            <Grid item xs={2} className={classes.enemy1Total}>
+              <Box className={classes.enemy1BasicBox}>
+                <Box className={classes.enemy1BasicBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1BasicBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1BasicBox}>
+                <Box className={classes.enemy1BasicBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1BasicBoxBottom}>
+                  123
+                </Box>
+              </Box>
+            </Grid>
+          </Grid>
+        </Grid>
+
+        <Grid container className={classes.enemy1Container}>
+          <Grid container>
+            <Grid item xs={1} className={classes.enemy1ImageItem}>
+              aa
+            </Grid>
+            <Grid item xs={11} className={classes.enemy1BasicItem}>
+              <Box className={classes.enemy1BasicBox}>
+                <Box className={classes.enemy1BasicBoxTop}>
+                  A
+                </Box>
+                <Box className={classes.enemy1BasicBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1BasicBox}>
+                <Box className={classes.enemy1BasicBoxTop}>
+                  P
+                </Box>
+                <Box className={classes.enemy1BasicBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1BasicBox}>
+                <Box className={classes.enemy1BasicBoxTop}>
+                  Q
+                </Box>
+                <Box className={classes.enemy1BasicBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1BasicBox}>
+                <Box className={classes.enemy1BasicBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1BasicBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1BasicBox}>
+                <Box className={classes.enemy1BasicBoxTop}>
+                  E
+                </Box>
+                <Box className={classes.enemy1BasicBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1BasicBox}>
+                <Box className={classes.enemy1BasicBoxTop}>
+                  R
+                </Box>
+                <Box className={classes.enemy1BasicBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1BasicBox}>
+                <Box className={classes.enemy1BasicBoxTop}>
+                  Rune
+                </Box>
+                <Box className={classes.enemy1BasicBoxBottom}>
+                  123
+                </Box>
+              </Box>
+            </Grid>
+          </Grid>
+
+          <Grid container className={classes.enemy1ComboContainer}>
+            <Grid item xs={10}>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+            </Grid>
+            <Grid item xs={2} className={classes.enemy1Total}>
+              <Box className={classes.enemy1BasicBox}>
+                <Box className={classes.enemy1BasicBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1BasicBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1BasicBox}>
+                <Box className={classes.enemy1BasicBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1BasicBoxBottom}>
+                  123
+                </Box>
+              </Box>
+            </Grid>
+          </Grid>
+        </Grid>
+
+        <Grid container className={classes.enemy1Container}>
+          <Grid container>
+            <Grid item xs={1} className={classes.enemy1ImageItem}>
+              aa
+            </Grid>
+            <Grid item xs={11} className={classes.enemy1BasicItem}>
+              <Box className={classes.enemy1BasicBox}>
+                <Box className={classes.enemy1BasicBoxTop}>
+                  A
+                </Box>
+                <Box className={classes.enemy1BasicBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1BasicBox}>
+                <Box className={classes.enemy1BasicBoxTop}>
+                  P
+                </Box>
+                <Box className={classes.enemy1BasicBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1BasicBox}>
+                <Box className={classes.enemy1BasicBoxTop}>
+                  Q
+                </Box>
+                <Box className={classes.enemy1BasicBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1BasicBox}>
+                <Box className={classes.enemy1BasicBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1BasicBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1BasicBox}>
+                <Box className={classes.enemy1BasicBoxTop}>
+                  E
+                </Box>
+                <Box className={classes.enemy1BasicBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1BasicBox}>
+                <Box className={classes.enemy1BasicBoxTop}>
+                  R
+                </Box>
+                <Box className={classes.enemy1BasicBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1BasicBox}>
+                <Box className={classes.enemy1BasicBoxTop}>
+                  Rune
+                </Box>
+                <Box className={classes.enemy1BasicBoxBottom}>
+                  123
+                </Box>
+              </Box>
+            </Grid>
+          </Grid>
+
+          <Grid container className={classes.enemy1ComboContainer}>
+            <Grid item xs={10}>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1ComboBox}>
+                <Box className={classes.enemy1ComboBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1ComboBoxBottom}>
+                  123
+                </Box>
+              </Box>
+            </Grid>
+            <Grid item xs={2} className={classes.enemy1Total}>
+              <Box className={classes.enemy1BasicBox}>
+                <Box className={classes.enemy1BasicBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1BasicBoxBottom}>
+                  123
+                </Box>
+              </Box>
+              <Box className={classes.enemy1BasicBox}>
+                <Box className={classes.enemy1BasicBoxTop}>
+                  W
+                </Box>
+                <Box className={classes.enemy1BasicBoxBottom}>
+                  123
+                </Box>
+              </Box>
+            </Grid>
           </Grid>
         </Grid>
       </Box>
