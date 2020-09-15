@@ -7,8 +7,8 @@ function App() {
   return (
     <div>
       <Switch>
-        <Route exact path="/" component={Main} />
         <Route path="/Play" component={Play} />
+        <Route path="/" component={Main} />
       </Switch>
     </div>
   );

@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Box, Grid, Button, Paper } from '@material-ui/core';
 import { Skeleton } from '@material-ui/lab';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
 const axios = require('axios');
 
@@ -68,26 +68,30 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const callAPIstart = () => {
+const callAPIstart = (history) => {
   setTimeout(() => {
     console.log('test');
     axios({
       method: 'get',
-      url: '/',
-      baseURL: 'http://localhost:3000',
+      url: 'resources/allgamedata.json'
     }).then((res) => {
-      console.log(res);
+      console.log(res.data);
+      // Step 2. Play 페이지로 이동
+      history.push('/Play');
+    }).catch((error) => {
+      console.log(error);
+      callAPIstart();
     });
-    callAPIstart();
   }, 5000);
 }
 
 const Main = () => {
-    const classes = useStyles();
+  const classes = useStyles();
+  let history = useHistory();
 
   useEffect(() => {
     console.log('마운트 될 때만 실행됩니다.');
-    callAPIstart();
+    callAPIstart(history);
   }, []);
 
   return (
